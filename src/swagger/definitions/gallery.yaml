@@ -1,0 +1,15 @@
+Gallery:
+  type: object
+  required:
+    - image
+  properties:
+    image:
+      type: string
+    createdAt:
+      type: string
+    updatedAt:
+      type: string
+
+
+  xml:
+      name: Gallery

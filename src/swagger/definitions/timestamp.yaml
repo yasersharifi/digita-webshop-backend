@@ -1,0 +1,12 @@
+Timestamp:
+    type: object
+    required:
+        - createdAt
+        - updatedAt
+    properties:
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+    xml:
+        name: Timestamp

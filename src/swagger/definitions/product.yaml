@@ -1,0 +1,45 @@
+---
+Product:
+    type: object
+    properties:
+        title:
+            type: string
+        image:
+            type: string
+        gallery:
+          type: array
+          items:
+            $ref: '#/definitions/Gallery'
+        offPrice:
+            type: number
+            minimum: 0
+            maximum: 100
+        price:
+            type: number
+        rating:
+            type: number
+            minimum: 0
+            maximum: 5
+        quantity:
+            type: number
+        sku:
+            type: string
+        colors: 
+            type: array
+        category: 
+            type: string
+        tags: 
+            type: array
+        shortDescription: 
+            type: string
+        fullDescription: 
+            type: string
+        brand: 
+            type: string
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+    xml:
+        name: Product
+
