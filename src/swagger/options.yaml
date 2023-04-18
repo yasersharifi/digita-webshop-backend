@@ -8,8 +8,8 @@ info:
         email: 
 externalDocs:
     description: Read about the developer
-    url: http://127.0.0.1:8080/docs
-host: 127.0.0.1:8080/api
+    url: http://localhost:8080/docs
+host: localhost:8080/api
 schemes:
     - https
     - http
@@ -20,8 +20,8 @@ securityDefinitions:
         name: Authorization 
         description: "Enter the token with the Bearer: prefix, e.g. 'Bearer abcde12345'"
 tags:
-    # - name: auth
-    #   description: Operations About Auth
+    - name: Products
+      description: Operations About Products
 
     - name: articles
       description: Operations About Articles

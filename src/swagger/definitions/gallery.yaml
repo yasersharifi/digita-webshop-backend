@@ -3,6 +3,8 @@ Gallery:
   required:
     - image
   properties:
+    _id:
+      type: string
     image:
       type: string
     createdAt:

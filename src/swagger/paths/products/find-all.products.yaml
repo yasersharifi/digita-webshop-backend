@@ -1,0 +1,29 @@
+---
+get:
+  tags:
+    - Products
+  summary: Find All Products
+  description: Find All Products Endpoints
+  produces:
+    - application/json
+  responses:
+    200:
+      description: Successful To Get All Products
+      schema:
+        type: object
+        properties:
+          code: 
+            type: number
+            required: true
+            enum: [200]
+          message: 
+            type: string
+            required: true
+            enum: ['Products found successfully']
+          data:
+            type: array
+            items:
+              $ref: '#/definitions/Product'
+    500:
+      description: Server Error
+

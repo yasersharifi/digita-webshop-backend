@@ -1,0 +1,19 @@
+---
+get:
+    tags:
+      - Products
+    summary: Find One Products Reviews
+    description: Find One Products Reviews Endpoints -- Get Review By Products ID
+    produces:
+      - application/json
+    parameters: 
+      - in: path
+        name: aid
+        type: string
+        description: Product id
+    responses:
+      200:
+        description: Successful To Get One Product Reviews
+      500:
+        description: Server Error
+
